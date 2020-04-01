@@ -71,9 +71,3 @@ store.subscribe(() => {
   debugger
   console.log(state);
 });
-store.dispatch({
-  type: 'AGREGAR',
-  payload: {
-    text: 'Cucu desde redux'
-  }
-})
