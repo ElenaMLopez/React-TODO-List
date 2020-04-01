@@ -10,7 +10,8 @@ txtNuevaNotaDOM.keyup((e) => {
   if (e.keyCode === 13) {
     console.log(e.keyCode);
     
-    const text = txtNuevaNotaDOM.val()
+    const text = txtNuevaNotaDOM.val();
+    txtNuevaNotaDOM.val('');
 
     store.dispatch({
       type: 'AGREGAR',
