@@ -67,3 +67,14 @@ store.subscribe(() => {
   
   actualizarLista(state)
 });
+
+const actions = JSON.parse(localStorage.getItem('actions') || '[]');
+
+
+
+actions.forEach((action, i) => {
+  setTimeout(() => {
+    store.dispatch(action)
+  }, i * 1000)
+});
+
